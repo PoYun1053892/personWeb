@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is a practice website, nonprofitable">
+    <meta name="keywords" content="JUST CHILL Practice">
+    <title>JUST CHILL</title>
+    <link rel="stylesheet" href="./scss/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="shortcut icon" href="./images/short-cut-logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="cart_slide">
+        <div class="cart_title">
+            <h3><span class="close_btn">&gt;</span>CART</h3>
+        </div>
+        <div class="cart_info">
+            <ul class="displayArea"></ul>
+            <div class="total">
+                <h3>Total : <span>0</span></h3>
+                <button class="check_btn cart_check mb-2">CHECK OUT</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h1><a href="index.html">JUSTCHILL</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href=""><img src="./images/user_icon.png" alt="">LOG IN</a>
+                </li>
+                <li>
+                    <a href="product_list.html">SHOP</a>
+                </li>
+                <li>
+                    <a href="about.html">ABOUT</a>
+                </li>
+                <li>
+                    <a href="news.html">NEWS</a>
+                </li>
+                <li>
+                    <a href="question.html">F&Q</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT US</a>
+                </li>
+            </ul>
+            <div class="nav-cart">
+                <img src="./images/shopping-cart_icon.png" alt="">
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <!-- 內容開始 -->
+        <main>
+            <div class="cover">
+                <div class="banner mb-5">
+                    <svg id="logo" data-name="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 573.05 161.41">
+                        <title>logo</title>   
+                        <path class="cls-1" d="M626.74,428.42h14.4v45.31q0,8.89-1.56,13.67a19.36,19.36,0,0,1-7.62,10q-5.52,3.79-14.55,3.78-10.6,0-16.31-5.93t-5.76-17.41L609,476.32q.24,6.15,1.81,8.69a7.78,7.78,0,0,0,7.13,3.86q4.83,0,6.84-2.76t2-11.45Z" transform="translate(-595.35 -427.2)"/>
+                        <path class="cls-1" d="M656.43,428.42h14.45v38.77q0,9.23.54,12a11.59,11.59,0,0,0,4.42,7.06q3.49,2.66,9.55,2.66t9.28-2.51a9.94,9.94,0,0,0,3.76-6.18,80.58,80.58,0,0,0,.63-12.16v-39.6h14.45V466q0,12.89-1.17,18.21a20.15,20.15,0,0,1-4.32,9A21.83,21.83,0,0,1,699.6,499q-5.27,2.17-13.77,2.17-10.25,0-15.55-2.37a22.22,22.22,0,0,1-8.37-6.15,19.71,19.71,0,0,1-4.05-7.93q-1.42-6.15-1.42-18.16Z" transform="translate(-595.35 -427.2)"/>
+                        <path class="cls-1" d="M725.08,476.71l14.06-1.37q1.27,7.08,5.15,10.4t10.47,3.32q7,0,10.52-3a8.79,8.79,0,0,0,3.54-6.91,6.52,6.52,0,0,0-1.49-4.32,11.91,11.91,0,0,0-5.2-3.1q-2.54-.88-11.57-3.12-11.62-2.88-16.31-7.08a18.63,18.63,0,0,1-6.59-14.4,18.4,18.4,0,0,1,3.1-10.23,19.41,19.41,0,0,1,8.94-7.25,35.81,35.81,0,0,1,14.09-2.49q13.48,0,20.29,5.91t7.15,15.77l-14.45.63q-.93-5.52-4-7.93t-9.16-2.42q-6.3,0-9.86,2.59a5.21,5.21,0,0,0-2.29,4.44,5.5,5.5,0,0,0,2.15,4.35q2.73,2.3,13.28,4.79t15.6,5.15a20.11,20.11,0,0,1,7.91,7.28,22.53,22.53,0,0,1-.56,22.92,20.49,20.49,0,0,1-9.67,8q-6.25,2.61-15.58,2.61-13.57,0-20.85-6.27T725.08,476.71Z" transform="translate(-595.35 -427.2)"/>
+                        <path class="cls-1" d="M811.56,500V440.53H790.32V428.42H847.2v12.11H826V500Z" transform="translate(-595.35 -427.2)"/>
+                        <path class="cls-1" d="M930.11,473.68l14,4.44q-3.22,11.72-10.72,17.41t-19,5.69q-14.26,0-23.44-9.74t-9.18-26.64q0-17.87,9.23-27.76t24.27-9.89q13.13,0,21.34,7.76,4.88,4.59,7.32,13.18l-14.31,3.42a14.79,14.79,0,0,0-15.09-12,16.29,16.29,0,0,0-12.92,5.71q-5,5.71-5,18.51,0,13.57,4.88,19.34a15.85,15.85,0,0,0,12.7,5.76,14.48,14.48,0,0,0,9.91-3.66Q928.31,481.54,930.11,473.68Z" transform="translate(-595.35 -427.2)"/>
+                        <path class="cls-1" d="M956.58,500V428.42H971v28.17h28.32V428.42h14.45V500H999.35V468.7H971V500Z" transform="translate(-595.35 -427.2)"/>
+                        <path class="cls-1" d="M1028.31,500V428.42h14.45V500Z" transform="translate(-595.35 -427.2)"/>
+                        <path class="cls-1" d="M1056.92,500V429h14.45v58.94h35.94V500Z" transform="translate(-595.35 -427.2)"/>
+                        <path class="cls-1" d="M1118,500V429h14.45v58.94h35.94V500Z" transform="translate(-595.35 -427.2)"/>
+                        <path class="cls-1" d="M726,588V552.21h15.21a26,26,0,0,1,8.34,1,8.22,8.22,0,0,1,4.16,3.43,10.31,10.31,0,0,1,1.56,5.64,9.55,9.55,0,0,1-2.37,6.65,11.37,11.37,0,0,1-7.08,3.31,16.91,16.91,0,0,1,3.87,3,40.9,40.9,0,0,1,4.11,5.81l4.37,7h-8.64l-5.22-7.79a50.42,50.42,0,0,0-3.81-5.26,5.56,5.56,0,0,0-2.17-1.49,11.94,11.94,0,0,0-3.64-.4h-1.46V588Zm7.23-20.65h5.35a27.61,27.61,0,0,0,6.49-.44,3.89,3.89,0,0,0,2-1.51,4.66,4.66,0,0,0,.73-2.69,4.3,4.3,0,0,0-1-2.92,4.43,4.43,0,0,0-2.72-1.4q-.88-.12-5.27-.12h-5.64Z" transform="translate(-595.35 -427.2)"/>
+                        <path class="cls-1" d="M762.11,588V552.21h26.54v6.05H769.33v7.93h18v6h-18V582h20v6Z" transform="translate(-595.35 -427.2)"/><path class="cls-1" d="M795.65,588V552.5h7.23V582h18v6Z" transform="translate(-595.35 -427.2)"/>
+                        <path class="cls-1" d="M826,588V552.21h26.54v6.05H833.23v7.93h18v6h-18V582h20v6Z" transform="translate(-595.35 -427.2)"/>
+                        <path class="cls-1" d="M855.71,588l12.23-18.68-11.08-17.11h8.45l7.18,11.5,7-11.5h8.37l-11.13,17.38L889,588h-8.72l-7.93-12.38-8,12.38Z" transform="translate(-595.35 -427.2)"/>
+                        <path class="cls-1" d="M925,588h-7.86L914,579.87H899.68l-3,8.13h-7.67L903,552.21h7.64Zm-13.31-14.16-4.93-13.28-4.83,13.28Z" transform="translate(-595.35 -427.2)"/><path class="cls-1" d="M933.15,588V558.26H922.53v-6.05H951v6.05h-10.6V588Z" transform="translate(-595.35 -427.2)"/>
+                        <path class="cls-1" d="M955.42,588V552.21h7.23V588Z" transform="translate(-595.35 -427.2)"/><path class="cls-1" d="M968.06,570.32a22.76,22.76,0,0,1,1.64-9.18,16.85,16.85,0,0,1,3.33-4.91,13.93,13.93,0,0,1,4.63-3.22,19.66,19.66,0,0,1,7.71-1.42q7.91,0,12.66,4.91t4.75,13.65q0,8.67-4.71,13.56t-12.6,4.9q-8,0-12.7-4.87T968.06,570.32Zm7.45-.24q0,6.08,2.81,9.22a9.65,9.65,0,0,0,14.22,0q2.77-3.11,2.77-9.34t-2.7-9.18a10,10,0,0,0-14.37,0Q975.51,563.9,975.51,570.08Z" transform="translate(-595.35 -427.2)"/>
+                        <path class="cls-1" d="M1008.49,588V552.21h7l14.65,23.9v-23.9h6.71V588h-7.25l-14.43-23.34V588Z" transform="translate(-595.35 -427.2)"/>
+                    </svg>
+                </div>
+                <!-- <div class="scene" id="canvas"></div> -->
+                <div class="slogan mb-4">
+                    <p>MIT</p>
+                    <p>Laying your burdens down</p>
+                </div>
+                <a class="viewProducts primary" href="product_list.html">VIEW PRODUCTS</a>
+            </div>
+            <div class="index_about mb-6">
+                <img class="rotation" src="./images/rotate.png" alt="">
+                <div class="index_img">
+                    <img src="./images/index_img.png" alt="">
+                </div>
+                <div class="word">
+                    <div>
+                        <p class="textAnime"><i class="fas fa-arrow-right i-toggle1"></i> STERNUM STRAP</p>
+                    </div>
+                    <div>
+                        <p class="textAnime"><i class="fas fa-arrow-right i-toggle2"></i> ZIPPER</p>
+                    </div>
+                </div>
+                <div class="strap_img">
+                    <img src="./images/strap.jpg" alt="">
+                    <p>A standard feature on our larger packs, the 
+                        adjustable Sternum Strap is also a great addition
+                         to the Metro or Stuff pack. The strap system 
+                        features adjustable 3/4" webbing</p>
+                </div>
+                <div class="zipper_img">
+                    <img src="./images/zipper.png" alt="">
+                    <p>YKK zippers and sliders are named based on a 
+                        certain set of criteria. Separating Zipper Automatic 
+                        Lock Short Single Pull Metal</p>
+                </div>
+            </div>
+            <!-- <div class="marquee">
+                <div id="no01" class="wrapper">
+                    <div class="boxes">
+                    <div class="box">JUST</div>
+                    <div class="box">CHILL</div>
+                    <div class="box">JUST</div>
+                    <div class="box">CHILL</div>
+                    <div class="box">JUST</div>
+                    <div class="box">CHILL</div>
+                    <div class="box">JUST</div>
+                    <div class="box">CHILL</div>
+                    </div>
+                </div>
+                
+                <div id="no01" class="wrapper">
+                    <div class="boxes">
+                        <div class="box">JUST</div>
+                        <div class="box">CHILL</div>
+                        <div class="box">JUST</div>
+                        <div class="box">CHILL</div>
+                        <div class="box">JUST</div>
+                        <div class="box">CHILL</div>
+                        <div class="box">JUST</div>
+                        <div class="box">CHILL</div>
+                    </div>
+                </div>
+                
+                <div id="no01" class="wrapper mb-6">
+                    <div class="boxes">
+                        <div class="box">JUST</div>
+                        <div class="box">CHILL</div>
+                        <div class="box">JUST</div>
+                        <div class="box">CHILL</div>
+                        <div class="box">JUST</div>
+                        <div class="box">CHILL</div>
+                        <div class="box">JUST</div>
+                        <div class="box">CHILL</div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="slider">
+                <img class="rotation" src="./images/rotate_new.png" alt="">
+                <div class="slide active">
+                    <div class="info">
+                        <h3 class="mb-2">M00 Military</h3>
+                        <ul class="mb-2">
+                            <li>Fabric: Ballistic weave</li>
+                            <li>Zip closure</li>
+                            <li>Zip exterior pockets</li>
+                            <li>Shoulder straps</li>
+                            <li>Lined</li>
+                            <li>Weight: 17oz / 0.48kg</li>
+                            <li>Imported, Vietnam</li>
+                        </ul>
+                        <a href="product.html">BUY</a>
+                    </div>
+                    <img src="./images/newArrival-1.png" alt="">
+                </div>
+                <div class="slide">
+                    <div class="info">
+                        <h3 class="mb-2">M01 Military</h3>
+                        <ul class="mb-2">
+                            <li>Fabric: Ballistic weave</li>
+                            <li>Zip closure</li>
+                            <li>Zip exterior pockets</li>
+                            <li>Shoulder straps</li>
+                            <li>Lined</li>
+                            <li>Weight: 17oz / 0.48kg</li>
+                            <li>Imported, Vietnam</li>
+                        </ul>
+                        <a href="product.html">BUY</a>
+                    </div>
+                    <img src="./images/newArrival-1.png" alt="">
+                </div>
+                <div class="slide">
+                    <div class="info">
+                        <h3 class="mb-2">M02 Military</h3>
+                        <ul class="mb-2">
+                            <li>Fabric: Ballistic weave</li>
+                            <li>Zip closure</li>
+                            <li>Zip exterior pockets</li>
+                            <li>Shoulder straps</li>
+                            <li>Lined</li>
+                            <li>Weight: 17oz / 0.48kg</li>
+                            <li>Imported, Vietnam</li>
+                        </ul>
+                        <a href="product.html">BUY</a>
+                    </div>
+                    <img src="./images/newArrival-1.png" alt="">
+                </div>
+                <div class="slide">
+                    <div class="info">
+                        <h3 class="mb-2">M03 Military</h3>
+                        <ul class="mb-2">
+                            <li>Fabric: Ballistic weave</li>
+                            <li>Zip closure</li>
+                            <li>Zip exterior pockets</li>
+                            <li>Shoulder straps</li>
+                            <li>Lined</li>
+                            <li>Weight: 17oz / 0.48kg</li>
+                            <li>Imported, Vietnam</li>
+                        </ul>
+                        <a href="product.html">BUY</a>
+                    </div>
+                    <img src="./images/newArrival-1.png" alt="">
+                </div>
+                <div class="navigation">
+                    <div class="btn active"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                </div>
+            </div>
+        </main>
+        <!-- <div class="product_banner"></div> -->
+        <div class="news mb-4">
+            <h2>NEWS</h2> 
+            <div class="news_all">
+                <a href="#" class="news_card">
+                    <div class="news_img">
+                        <img src="./images/news_card1.png" alt="">
+                    </div>
+                    <div class="news_info">
+                        <p class="mb-2 textAnime">Please vote for us in the Golden Backpack Awards!!!</p>
+                        <br>
+                        <p class="small textAnime">2021.01.07 Thu</p>
+                    </div>
+                </a>
+                <a href="#" class="news_card reverse">
+                    <div class="news_img">
+                        <img src="./images/news_card2.png" alt="">
+                    </div>
+                    <div class="news_info">
+                        <p class="mb-2 textAnime">Best Every Bag CARE AWARDS
+                            [ JUST CHILL ]  M00 Military</p>
+                        <br>
+                        <p class="small textAnime">2020.12.29 Tue</p>
+                    </div>
+                </a>
+                <a href="#" class="news_card">
+                    <div class="news_img">
+                        <img src="./images/news_card3.png" alt="">
+                    </div>
+                    <div class="news_info">
+                        <p class="mb-2 textAnime">HOW TO CHOOSE A BACKPACK:
+                            BEGINNER’S GUIDE</p>
+                        <br>
+                        <p class="small textAnime">2020.12.21 Mon</p>
+                    </div>
+                </a>
+                <a href="#" class="news_card reverse">
+                    <div class="news_img">
+                        <img src="./images/news_card4.png" alt="">
+                    </div>
+                    <div class="news_info">
+                        <p class="mb-2 textAnime">Best Bags to Store your NES 
+                            Classic Edition in 2020 </p>
+                        <br>
+                        <p class="small textAnime">2020.12.20 Sun</p>
+                    </div>
+                </a>
+                <div class="tag">
+                    <a href="news.html" class="textAnime">||ALL NEWS</a>
+                </div>
+            </div>
+        </div>
+    <!-- 內容結束 -->
+        <footer class="mb-6">
+            <div class="marquee">
+                <div id="no01" class="wrapper">
+                    <div class="boxes mb-4">
+                        <div class="box">
+                            <img src="./images/marquee.svg" alt="">
+                        </div>
+                        <div class="box">
+                            <img src="./images/marquee.svg" alt="">
+                        </div>
+                        <div class="box">
+                            <img src="./images/marquee.svg" alt="">
+                        </div>
+                        <div class="box">
+                            <img src="./images/marquee.svg" alt="">
+                        </div>
+                        <div class="box">
+                            <img src="./images/marquee.svg" alt="">
+                        </div>
+                        <div class="box">
+                            <img src="./images/marquee.svg" alt="">
+                        </div>
+                        <div class="box">
+                            <img src="./images/marquee.svg" alt="">
+                        </div>
+                        <div class="box">
+                            <img src="./images/marquee.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="footer_community">
+                    <a class="mb-1" href="#">INSTAGRAM</a>
+                    <a class="mb-2" href="#">FACEBOOK</a>
+                    <div class="footer_tag">
+                        <a href="#">CONTACT</a>
+                        <a href="#">F&Q</a>
+                        <a class="backToTop" href="#nav">BACK TO TOP <i class="fas fa-arrow-circle-up"></i></a>
+                    </div>
+                </div>
+                <div class="footer_subscribe">
+                    <h3 class="mb-1">subscribe</h3>
+                    <div class="input_group mb-2">
+                        <input type="email" placeholder="Enter Your Email">
+                        <button>SUBSCRIBE NOW</button>
+                    </div>
+                    <small>Copyright ©2021 JUST CHILL All rights reserved.</small>
+                    
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- <script src="./js/three.min.js"></script>
+    <script src="./js/GLTFLoader.js"></script> -->
+    <!-- <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script> -->
+    <script src="./vendor/gsap/gsap.min.js"></script>
+    <!-- <script src="./js/app.js"></script> -->
+    <script src="./js/marquee.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/cart.js"></script>
+    <!-- <script src="./vendor/owl/js/jquery.min.js"></script> -->
+</body>
+</html>

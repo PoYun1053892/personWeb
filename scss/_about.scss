@@ -1,0 +1,368 @@
+.m-about{
+    .boxes{
+        .box{
+            font-size: 4rem;
+        }
+    }
+}
+
+main.about{
+    max-width: 948px;
+    margin: 0 auto;
+    .concept{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: $secondary;
+        img{
+            width: 30%;
+        }
+        .concept_slogan{
+            padding: 0 30px;
+            .slogan{
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+        }   
+    }
+    h3{
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        letter-spacing: 1rem;
+        font-weight: 900;
+    }
+    .extension{
+        width: 100%;
+        margin: 0 auto;
+        border: 1px solid #000;
+        background-color: #000;
+        padding: 30px 0;
+        margin-bottom: 80px;
+        .extension_intro{
+            img{
+                width: 90%;
+            }
+            width: 60%;
+            margin: 0 auto;
+            color: $secondary;
+            text-align: center;
+        }
+    }
+    .water-resistance{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row-reverse;
+        position: relative;
+        flex-wrap: wrap;
+        // border: 1px solid red;
+        .water-img{
+            width: 50%;
+        }
+        .title{
+            position: absolute;
+            top: 30px;
+            .title_word{
+                letter-spacing: .5rem;
+                font-size: 3rem;
+                display: block;
+                font-weight: 700;
+                // border: 1px solid #000;
+            }
+        }
+        .water-info{
+            width: 40%;
+            // border: 1px solid #000;
+            padding: 230px 20px 0 20px;
+            .water-p:first-child{
+                margin-left: 60px;
+            }
+            .water-p{
+                display: flex;
+                i{
+                    padding:5px 20px;
+                    font-size: 1.5rem;
+                }
+            }
+            span{
+                font-size: 1.25rem;
+                font-weight: 700;
+            }
+        }
+    }
+    .traveler{
+        display: flex;
+        justify-content: flex-start;
+        // align-items: flex-end;
+        position: relative;
+        flex-wrap: wrap;
+        svg{
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%) ;
+            rect{
+                width: 50px;
+                height: 100px;
+                stroke: $secondary;
+                stroke-width: 3px;
+                stroke-dasharray: 10px;
+                fill: none ;
+            }
+        }
+        .traveler-img{
+            width: 70%;
+        }
+        .title{
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            .title_word{
+                letter-spacing: .5rem;
+                font-size: 3rem;
+                display: block;
+                font-weight: 700;
+                background-color: $primary;
+                // border: 1px solid #000;
+            }
+        }
+        .traveler-info{
+            width: 25%;
+            position: relative;
+            top: 200px;
+            margin-left: 40px;
+            // border: 1px solid #000;
+            span{
+                font-size: 1.05rem;
+                font-weight: 700;
+            }
+        }
+    }
+    .ergonomic{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        position: relative;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        position: relative;
+        .rotate_icon{
+            position: absolute;
+            left: 50px;
+            top: -50px;
+            transform-origin: bottom;
+            transform: rotate(-90deg) ;
+            .half_circle{
+                height: 15px;
+                width: 30px;
+                border-top-right-radius: 30px;
+                border-top-left-radius: 30px;
+                background-color: $secondary;
+                margin-bottom: 30px;
+            }
+            .square{
+                width: 15px;
+                height: 15px;
+                border: 4px solid $secondary;
+                margin: 0 auto;
+            }
+        }
+        .ergonomic-img{
+            width: 50%;
+        }
+        .title{
+            position: absolute;
+            left: 15%;
+            top: 0;
+            .title_word{
+                font-size: 3rem;
+                display: block;
+                font-weight: 700;
+                // border: 1px solid #000;
+            }
+        }
+        .ergonomic-info{
+            width: 30%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-120deg);
+    }
+    60%{
+        transform: rotate(-70deg);
+    }
+    70%{
+        transform: rotate(-100deg);
+    }
+    80%{
+        transform: rotate(-80deg);
+    }
+    90%{
+        transform: rotate(-95deg);
+    }
+    100%{
+        transform: rotate(-90deg);
+    }
+}
+
+.rotate_anime{
+    animation: rotate 2s ease-in;
+}
+
+@keyframes dash{
+    0%{
+        stroke-dasharray: 100px;
+    }
+    100%{
+        stroke-dasharray: 10px;
+    }
+}
+
+.dash_anime{
+    animation: dash 2s;
+}
+
+@media(max-width: 992px){
+    main.about{
+        .traveler{
+            margin-bottom: 60px;
+            // border: 1px solid #000;
+            .traveler-img{
+                margin-bottom: 30px;
+            }
+            .traveler-info{
+                width: 100%;
+                top: 0;
+            }
+        }
+        .ergonomic{
+            // border: 1px solid red;
+            flex-direction: column;
+            align-items: center;
+            .ergonomic-img{
+                width: 100%;
+            }
+            .title{
+                position: relative;
+                left: 0;
+                width: 100%;
+                // border: 1px solid #000;
+                .title_word{
+                    display: inline-block;
+                    margin-right: 16px;
+                    margin-bottom: 16px;
+                }
+            }
+            .rotate_icon{
+                display: none;
+            }
+            .ergonomic-info{
+                width: 100%;
+                p{
+                    padding: 0 20px;
+                }
+                // padding: 0 20px;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px){
+    main.about{
+        .concept{
+            flex-direction: column;
+            img{
+                min-width: 150px;
+                width: 40%;
+                margin-bottom: 30px;
+                // background-color: $secondary;
+                padding: 0 30px;
+            }
+        }
+        .extension{
+            .extension_intro{
+                width: 100%;
+                p{
+                    padding: 0 20px;
+                }
+            }
+        }
+        .water-resistance{
+            .water-img{
+                width: 100%;
+                margin-bottom: 16px;
+            }
+            .title{
+                position: relative;
+                width: 100%;
+                // border: 1px solid #000;
+                top: 0;
+                text-align: center;
+                .title_word{
+                    display: inline-block;
+                    margin-right: 16px;
+                    // margin-bottom: 16px;
+                    &:last-child{
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .water-info{
+                padding: 0;
+                width: 100%;
+                .water-p{
+                    margin: 0;
+                    &:first-child{
+                        margin: 0;
+                        padding: 0 20px;
+                    }
+                }
+            }
+        }
+        .traveler{
+            svg{
+                display: none;
+            }
+            .traveler-img{
+                width: 100%;
+            }
+            .title{
+                position: relative;
+                top: 0;
+                left: 0;
+                // border: 1px solid #000;
+                width: 100%;
+                text-align: center;
+                .title_word{
+                    display: inline-block;
+                    margin-right: 16px;
+                    &:last-child{
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .traveler-info{
+                margin: 0;
+                padding: 0 20px;
+            }
+        }
+        .ergonomic{
+            .ergonomic-img{
+                width: 100%;
+            }
+            .title{
+                // border: 1px solid #000;
+                text-align: center;
+            }
+        }
+    }
+}

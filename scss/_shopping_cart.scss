@@ -1,0 +1,114 @@
+.all_cart{
+    max-width: 940px;
+    margin: 100px auto 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    // border: 1px solid #000;
+    h3{
+        font-size: 1.5rem;
+    }
+}
+.my_cart_show{
+    .my_cart{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 65%;
+        .cart_productInfo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .cart_productImg{
+                border-top: 1px solid $secondary;
+                border-bottom: 1px solid $secondary;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                img{
+                    width: 30%;
+                }
+                .img_content{
+                    input{
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cancel_btn{
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.summary{
+    width: 30%;
+    margin-left: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    .shipping{
+        .suball{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            border-top: 1px solid $secondary;
+            border-bottom: 1px solid $secondary;
+            p{
+                width: 50%;
+                text-align: center;
+                // border: 1px solid #000;
+                padding: 20px 0;
+            }
+        }
+        .allmoney{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h4{
+                width: 50%;
+                text-align: center;
+                padding: 30px 0;
+                font-size: 1.25rem;
+            }
+        }
+    }
+}
+.check_btn{
+    width: 100%;
+    background-color: $special;
+    padding: 5px 0;
+    text-align: center;
+    color: $secondary;
+    transition: all .3s ;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        background-color: $secondary;
+        color: $primary;
+    }
+}
+
+@media(max-width: 768px){
+    .all_cart{
+        padding: 0 50px;
+    }
+    .my_cart_show{
+        .my_cart{
+            width: 100%;
+        }
+    }
+    .summary{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 60px;
+        h3{
+            text-align: center;
+        }
+    }
+}

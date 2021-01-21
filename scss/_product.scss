@@ -1,0 +1,159 @@
+// @media(max-width: 768px){
+//     .product_main{
+//         .product_picker{
+//             .product_image{
+//                 display: flex;
+//                 margin: 0;
+//                 .product_show{
+//                     margin-right: 30px;
+//                 }
+//                 .product_pick{
+//                     width: 100px;
+//                     margin: 0 auto;
+//                     flex-direction: column;
+//                     // border: 1px solid red;
+//                 }
+//             }
+//             .description{
+//                 max-width: 100%;
+//                 // border: 1px solid red;
+//                 margin: 0;
+//                 text-align: center;
+//             }
+//         }
+//     }
+// }
+.cursor{
+    cursor:none;
+}
+.product_main{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.product_img{
+    // border: 1px solid red;
+    max-width: 948px;
+    #img_container{
+        // border: 3px solid blue;
+        max-width: 375px;
+        position: relative;
+    }
+    .mouseContain{
+        width: 100px;
+        height: 100px;
+        // border: 1px solid #000;
+        background-repeat: no-repeat;
+        position: absolute; 
+        border-radius: 50%;
+        background-color: #fff;
+        pointer-events: none;
+        // display: none;
+    }
+    .big_img{
+        width: 100%;
+        background-color: $secondary;
+        border: 1px solid #000;
+    }
+    .small_img{
+        img{
+            margin-right: 8px;
+            max-width: 64px;
+            border: 1px solid #000;
+            background-color: $secondary;
+            cursor: pointer;
+            transition: all .3s;
+            &:hover{
+                background-color: $special;
+            }
+        }
+    }
+}
+
+input::-webkit-inner-spin-button,::-webkit-outer-spin-button{
+    appearance: none;
+}
+
+input[type=number]{
+    appearance: textfield;
+    max-width: 50px;
+}
+
+
+.product_info{
+    margin-left: 60px;
+    width: 30%;
+    h3{
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+    form{
+        font-size: 0;
+        .productCart_btn{
+            padding: 10px 0;
+            &:hover{
+                background-color: $secondary;
+                filter: brightness(1.5);
+                color: #000;
+            }
+        }
+        .productBuy_btn{
+            padding: 10px 0;
+            &:hover{
+                background-color: $special;
+                filter: brightness(1.1);
+                color: $secondary;
+            }
+        }
+    }
+}
+
+.quality_group{
+    min-width: 120px;
+    font-size: 0;
+    input{
+        text-align: center;
+        border: none;
+        padding: 5px 10px;
+    }
+}
+
+.showing1,.showing2{
+    // border: 1px solid red;
+    max-width: 500px;
+    padding: 5px;
+    h4{
+        font-size: 1.25rem;
+        position: relative;
+        cursor: pointer;
+        padding: 10px 0;
+        border-bottom: 1px solid $secondary
+    }
+    h4::before{
+        content: "" ;
+        width: 8px;
+        height: 2px;
+        background-color: $secondary;
+        position: absolute;
+        right: 6px;
+        transform: rotate(45deg) translateY(-50%);
+        top: 50%;
+
+    }
+    h4::after{
+        content: "" ;
+        width: 8px;
+        height: 2px;
+        background-color: $secondary;
+        position: absolute;
+        right: 0;
+        transform: rotate(-45deg) translateY(-50%);
+        top: 50%;
+    }
+    p{
+        display: none;
+    }
+    .block{
+        display: block;
+    }
+}

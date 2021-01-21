@@ -1,0 +1,104 @@
+.cart_slide{
+    z-index:1000;
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    background-color: $special;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    position: fixed;
+    transform: translateX(100%);
+    transition: transform .5s ease-in;
+    overflow: scroll ;
+    overflow-x: hidden;
+    &::-webkit-scrollbar{
+        width: 0;
+        background: transparent;
+    }
+    .cart_title{
+        border-bottom: 1px solid $secondary;
+        width: 100%;
+        position: relative;
+        padding: 20px 0;
+        color: $secondary;
+        span{
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            padding: 0 20px;
+            cursor: pointer;
+        }
+        h3{
+            font-size: 1.25rem;
+            text-align: center;
+        }
+    }
+    .cart_info{
+        width: 100%;
+        .total{
+            margin: 0 40px;
+            h3{
+                padding: 10px 0;
+                font-size: 1.5rem;
+                border-bottom: 1px solid $secondary;
+            }
+            .cart_check{
+                margin-top: 20px;
+                padding: 10px 0;
+                background-color: $secondary;
+                color: $special;
+                &:hover{
+                    filter: brightness(1.5);
+                }
+            }
+        }
+        h3{
+            align-items: center;
+            padding: 50px 0;
+            font-size: 1.25rem;
+            color: $secondary;
+        }
+        .element{
+            width: 100%;
+            // border: 1px solid #000;
+            // border: 1px solid #000;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            font-size: 0;
+            color: $secondary;
+            .el_info{
+                font-size: 1rem;
+                color: $secondary;
+                margin-right: 16px;
+                h3{
+                    padding: 0;
+                }
+            }
+            img{
+                max-width: 100px;
+                background-color: $secondary;
+            }
+        }
+    }
+}
+
+.cart-active{
+    transform: translateX(0%);
+}
+
+@media(max-width: 768px){
+    .cart_slide{
+        width: 50%;
+    }
+}
+
+@media(max-width: 576px){
+    .cart_slide{
+        width: 100%;
+    }
+}
