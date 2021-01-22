@@ -39,6 +39,8 @@ function magnify(e) {
 
 
 smallImg.forEach(img => img.addEventListener("click", changeBig)) ;
+bigImg.addEventListener("touchmove", magnify) ;
+len.addEventListener("touchmove", magnify) ;
 bigImg.addEventListener("mousemove", magnify) ;
 len.addEventListener("mousemove", magnify) ;
 $("#img_container").on("mouseleave",function(){
