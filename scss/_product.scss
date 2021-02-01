@@ -125,6 +125,9 @@ input[type=number]{
         border: none;
         padding: 5px 10px;
     }
+    input[type="button"]{
+        background-color: $secondary;
+    }
 }
 
 .showing1,.showing2{

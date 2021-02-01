@@ -1674,6 +1674,10 @@ input[type=number] {
   padding: 5px 10px;
 }
 
+.quality_group input[type="button"] {
+  background-color: #f3f7f0;
+}
+
 .showing1, .showing2 {
   max-width: 500px;
   padding: 5px;
@@ -2482,7 +2486,7 @@ main.allNews {
 
 @media (max-width: 768px) {
   .questions {
-    padding: 0 50px;
+    padding: 0 50px 0 30px;
   }
   .questions input {
     padding: 10px 0;
