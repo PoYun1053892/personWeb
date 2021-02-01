@@ -6,7 +6,7 @@
     }
 }
 
-main.about{
+div.about{
     max-width: 948px;
     margin: 0 auto;
     .concept{
@@ -232,7 +232,7 @@ main.about{
 }
 
 @media(max-width: 992px){
-    main.about{
+    div.about{
         .traveler{
             margin-bottom: 60px;
             // border: 1px solid #000;
@@ -277,7 +277,7 @@ main.about{
 }
 
 @media(max-width: 768px){
-    main.about{
+    div.about{
         .concept{
             flex-direction: column;
             img{

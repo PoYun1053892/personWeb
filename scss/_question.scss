@@ -43,7 +43,7 @@
                 span{
                     position: absolute;
                     right: 0;
-                    padding: 0 20px;
+                    padding: 0 10px 10px 10px;
                 }
             }
             .answer{
@@ -72,13 +72,13 @@
 
   @media(max-width: 768px){
       .questions{
-          padding: 0 ;
+          padding: 0 50px ;
           input{
               padding: 10px 0;
           }
           .question_ask{
             .ask{
-                padding: 10px 0;
+                padding: 10px;
             }
           }
       }

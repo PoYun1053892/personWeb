@@ -32,7 +32,7 @@ function display(){
     }
     //在購物車創造元素
     function displayProduct(item){
-        displayArea.innerHTML += `
+        displayArea.innerHTML +=`
                                     <li class="element">
                                         <img src="${item.src}">
                                         <div class="el_info">
@@ -109,7 +109,7 @@ function display(){
 
         update(item)
 
-        total() ;
+        total()
     }))
     //點按X刪除鍵
     displayArea.addEventListener('click', event => {
@@ -140,3 +140,4 @@ function display(){
 }
 
 display() ;
+

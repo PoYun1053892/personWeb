@@ -29,6 +29,10 @@
                 font-size: 0.8em;
                 cursor: pointer;
                 transition: all .3s;
+                padding: 5px 10px;
+                &:focus{
+                    outline: none;
+                }
                 &:hover{
                     background-color: $special;
                     color: $secondary;

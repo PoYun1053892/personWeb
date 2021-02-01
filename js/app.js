@@ -19,25 +19,27 @@ function init() {
 
     // Camera setup
     camera = new THREE.PerspectiveCamera(fov,aspect,near,far) ;
-    camera.position.set(0.25,1.25,8);
+    camera.position.set(0.25,1.75,8);
 
     function checkPosition() {
-        if(window.matchMedia('(max-width: 414px)').matches){
-            camera.position.set(0,-2,17.5);
+        if(window.matchMedia('(max-width: 320px)').matches){
+            camera.position.set(0,2,10);
+        }else if(window.matchMedia('(max-width: 414px)').matches){
+            camera.position.set(0,2,8);
         }else if (window.matchMedia('(max-width: 576px)').matches) {
-            camera.position.set(0.25,-0.5,100);
+            camera.position.set(0.25,1.5,8);
         }else if(window.matchMedia('(max-width: 768px)').matches){
-            camera.position.set(0,-2,17.5);
+            camera.position.set(0,1,8);
         }else if(window.matchMedia('(max-width: 992px)').matches){
             camera.position.set(0,1,10);
         }else if(window.matchMedia('(max-width: 1024px)').matches){
             camera.position.set(0,-3,10);
         }else if(window.matchMedia('(max-width: 1200px)').matches){
-            camera.position.set(0,1,8);
+            camera.position.set(0,2,8);
         }
     }
     window.onresize=function(){  
-        console.log('監聽變化') ;
+        // console.log('監聽變化') ;
         watchChangeSize();
         checkPosition() ;
     } 

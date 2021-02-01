@@ -50,11 +50,11 @@ nav{
             transition: all .3s;
             border-bottom: 3px solid transparent;
             &:hover{
-                border-bottom: 3px solid $special;
+                border-bottom: 3px solid $secondary;
             }
         }
         .nav-focus{
-            border-bottom: 3px solid $special;
+            border-bottom: 3px solid $secondary;
         }
     }
 }

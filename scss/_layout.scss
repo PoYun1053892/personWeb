@@ -1,22 +1,12 @@
-html{
-    scroll-behavior: smooth;
-}
 body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.5;
     font-size: 14px;
     background-color: #373a32;
-}
-
-@mixin overlay {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-  }
+    // overflow: hidden;
+}
 
 h1,h2,h3,h4,h5,h6{
     line-height: 1.2;
@@ -76,9 +66,9 @@ $special: #F77a64 ;
     margin: 0 auto;
     overflow: hidden;
     color: $secondary;
+    position: relative;
     // border: 1px solid yellow;
 }
-
 @media(max-width: 768px){
     html{
         font-size: 10px;

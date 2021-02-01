@@ -16,3 +16,21 @@ function cancelModal(){
 quickView.forEach(btn => btn.addEventListener("click", showModal)) ;
 cancel_btn.addEventListener("click" , cancelModal) ;
 
+const btn = document.querySelectorAll(".btn");
+btn.forEach(Btn => {
+    Btn.addEventListener("click",function(){
+    btn.forEach(btn => {
+        btn.classList.remove("click") ;
+    })
+    Btn.classList.add("click");
+    const brand = document.querySelectorAll(".product_card") ;
+    brand.forEach(b => {
+        b.style.display = "none" ;
+            if(b.dataset.brand == Btn.textContent || Btn.textContent == "Reset All"){
+                b.style.display = "block";
+            }
+        })
+    })
+})
+
+

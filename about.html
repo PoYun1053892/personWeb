@@ -25,6 +25,51 @@
             </div>
         </div>
     </div>
+    <!-- SIGNIN -->
+    <div class="form_container">
+        <div class="switcher">
+            <p class="fieldSet">
+                <input type="radio" value="signIn" name="duration-1" id="signIn" checked>
+                <label for="signIn">Sign In</label>
+                <input type="radio" value="SignUp" name="duration-1" id="signUp">
+                <label for="signUp">Sign Up</label>
+                <span class="switch"></span>
+            </p>
+        </div>
+        <div class="form sign-up-container">
+            <form action="#" class="forming">
+                <button class="form_close">&times;</button>
+                <h2 class="form_title">Create Account</h2>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>SIGN UP</button>
+            </form>
+        </div>
+        <div class="form sign-in-container">
+            <form action="#" class="forming">
+                <button class="form_close">&times;</button>
+                <h2 class="form_title">Sign In</h2>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your account</span>
+                <input type="email" placeholder="email">
+                <input type="password" placeholder="password">
+                <span>Forgot your password?</span>
+                <button>SIGN IN</button>
+            </form>
+        </div>
+    </div>
+    <!-- SIGNIN -->
     <div class="container">
         <nav>
             <div class="logo">
@@ -32,7 +77,7 @@
             </div>
             <ul class="nav-links">
                 <li>
-                    <a href=""><img src="./images/user_icon.png" alt="">LOG IN</a>
+                    <a href="#" class="logIn"><img src="./images/user_icon.png" alt="">LOG IN</a>
                 </li>
                 <li>
                     <a href="product_list.html">SHOP</a>
@@ -60,128 +105,130 @@
             </div>
         </nav>
         <!-- 內容開始 -->
-        <div class="marquee m-about mar">
-            <div id="no01" class="wrapper">
-                <div class="boxes mt mb-6">
-                    <div class="box">ABOUT</div>
-                    <div class="box">ABOUT</div>
-                    <div class="box">ABOUT</div>
-                    <div class="box">ABOUT</div>
-                    <div class="box">ABOUT</div>
-                    <div class="box">ABOUT</div>
-                    <div class="box">ABOUT</div>
-                    <div class="box">ABOUT</div>
-                    <div class="box">ABOUT</div>
-                    <div class="box">ABOUT</div>
-                </div>
-            </div>
-        </div>
-        <main class="about">
-            <div class="concept mb-8">
-                <img src="./images/bag-img@2x.png" alt="">
-                <div class="concept_slogan">
-                    <p class="mb-2">Today, we need "energy" everywhere.
-                        But what is needed most is "Relax". <br>
-                        JUST CHILL is a relaxing support backpack that can support .</p>
-                    <p class="slogan">The "comfort" and "performance" that modern people need.</p>
-                </div>
-            </div>
-            <h3 class="mb-4">FEATURES</h3>
-            <div class="extension ">
-                <div class="extension_intro">
-                    <img src="./images/huru-a @2x.jpg" alt="">
-                    <p>A standard feature on our larger packs, the 
-                        adjustable Sternum Strap is also a great addition
-                         to the Metro or Stuff pack. The strap system 
-                        features adjustable 3/4" webbing,
-                        self-tensioning elastic for comfort and side 
-                        release buckles with a whistle for safety.</p>
-                </div>
-            </div>
-            <div class="water-resistance mb-6">
-                <div class="water-img">
-                    <img src="./images/huru-a-2-938x600.jpg" alt=""> 
-                </div>
-                <div class="title">
-                    <span class="title_word">WATER-RESISTANT </span>
-                    <span class="title_word">MATERIALS</span>
-                </div> 
-                <div class="water-info">
-                    <div class="water-p">
-                        <p class="mb-4">Due to JUST CHILL A Model’s <span>water-resistant feature</span>, weather conditions won’t threaten the dryness of your belongings.</p>
-                    </div>
-                    <div class="water-p">
-                        <i class="fas fa-times"></i>
-                        <p class="mb-4">CORDURA fabric — durable, versatile, reliable, water-repellent, trusted by the US Army.</p>
-                    </div>
-                    <div class="water-p">
-                        <i class="fas fa-angle-double-right"></i>
-                        <p class="mb-4">Custom-designed buckles, made from anodized aluminium and brass.</p>
-                    </div>
-                    <div class="water-p">
-                        <i class="far fa-circle"></i>
-                        <p class="mb-4">Japanese YKK zippers, produced in Germany, known for high quality and water resistance.</p>
-                    </div>
-                    <div class="water-p">
-                        <i class="fas fa-angle-double-left"></i>
-                        <p class="mb-4">Stainless steel stoppers and hooks make JUST CHILL look neat and tidy.</p>
-                    </div>
-                    <div class="water-p">
-                        <i class="far fa-square"></i>
-                        <p>Durable nylon straps complete the materials list.</p>
+        <main>
+            <div class="marquee m-about mar">
+                <div id="no01" class="wrapper">
+                    <div class="boxes mt mb-6">
+                        <div class="box">ABOUT</div>
+                        <div class="box">ABOUT</div>
+                        <div class="box">ABOUT</div>
+                        <div class="box">ABOUT</div>
+                        <div class="box">ABOUT</div>
+                        <div class="box">ABOUT</div>
+                        <div class="box">ABOUT</div>
+                        <div class="box">ABOUT</div>
+                        <div class="box">ABOUT</div>
+                        <div class="box">ABOUT</div>
                     </div>
                 </div>
             </div>
-            <div class="traveler mb-9">
-                <svg>
-                    <rect></rect>
-                </svg>
-                <div class="traveler-img">
-                    <img src="./images/huru-a-3-670x428@2x.jpg" alt=""> 
+            <div class="about">
+                <div class="concept mb-8">
+                    <img src="./images/bag-img@2x.png" alt="">
+                    <div class="concept_slogan">
+                        <p class="mb-2">Today, we need "energy" everywhere.
+                            But what is needed most is "Relax". <br>
+                            JUST CHILL is a relaxing support backpack that can support .</p>
+                        <p class="slogan">The "comfort" and "performance" that modern people need.</p>
+                    </div>
                 </div>
-                <div class="title">
-                    <span class="title_word">TRAVELER</span>
-                    <span class="title_word">FRIENDLY</span>
+                <h3 class="mb-4">FEATURES</h3>
+                <div class="extension ">
+                    <div class="extension_intro">
+                        <img src="./images/huru-a @2x.jpg" alt="">
+                        <p>A standard feature on our larger packs, the 
+                            adjustable Sternum Strap is also a great addition
+                            to the Metro or Stuff pack. The strap system 
+                            features adjustable 3/4" webbing,
+                            self-tensioning elastic for comfort and side 
+                            release buckles with a whistle for safety.</p>
+                    </div>
                 </div>
-                <div class="traveler-info">
-                    <p class="mb-4"><span>JUST CHILL A Model</span> backpack is <span>traveler-friendly</span> and compliant with both US and EU (TSA) carry-on luggage regulations.</p>
-                    <p class="mb-4">The backpack has a special <span>detachable strap</span> included that allows you to easily and securely piggyback your JUST CHILL on a suitcase.</p>
-                    <p class="mb-4">15,3’’ / 39cm width;<br>
-                        18,9’’ / 48cm height;<br>
-                        7,5 ‘’ / 19cm depth;<br>
-                        2,9 lbs / 1.3 kg weight;<br>
-                        25 liters – volume without expansion;<br>
-                        30 liters – volume with expansion..</p>
-                </div> 
-            </div>
-            <div class="ergonomic mb-8">
-                <div class="rotate_icon">
-                    <div class="half_circle"></div>
-                    <div class="square"></div>
+                <div class="water-resistance mb-6">
+                    <div class="water-img">
+                        <img src="./images/huru-a-2-938x600.jpg" alt=""> 
+                    </div>
+                    <div class="title">
+                        <span class="title_word">WATER-RESISTANT </span>
+                        <span class="title_word">MATERIALS</span>
+                    </div> 
+                    <div class="water-info">
+                        <div class="water-p">
+                            <p class="mb-4">Due to JUST CHILL A Model’s <span>water-resistant feature</span>, weather conditions won’t threaten the dryness of your belongings.</p>
+                        </div>
+                        <div class="water-p">
+                            <i class="fas fa-times"></i>
+                            <p class="mb-4">CORDURA fabric — durable, versatile, reliable, water-repellent, trusted by the US Army.</p>
+                        </div>
+                        <div class="water-p">
+                            <i class="fas fa-angle-double-right"></i>
+                            <p class="mb-4">Custom-designed buckles, made from anodized aluminium and brass.</p>
+                        </div>
+                        <div class="water-p">
+                            <i class="far fa-circle"></i>
+                            <p class="mb-4">Japanese YKK zippers, produced in Germany, known for high quality and water resistance.</p>
+                        </div>
+                        <div class="water-p">
+                            <i class="fas fa-angle-double-left"></i>
+                            <p class="mb-4">Stainless steel stoppers and hooks make JUST CHILL look neat and tidy.</p>
+                        </div>
+                        <div class="water-p">
+                            <i class="far fa-square"></i>
+                            <p>Durable nylon straps complete the materials list.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="ergonomic-img">
-                    <img src="./images/a-huru-ergonomic-938x600.jpg" alt=""> 
+                <div class="traveler mb-9">
+                    <svg>
+                        <rect></rect>
+                    </svg>
+                    <div class="traveler-img">
+                        <img src="./images/huru-a-3-670x428@2x.jpg" alt=""> 
+                    </div>
+                    <div class="title">
+                        <span class="title_word">TRAVELER</span>
+                        <span class="title_word">FRIENDLY</span>
+                    </div>
+                    <div class="traveler-info">
+                        <p class="mb-4"><span>JUST CHILL A Model</span> backpack is <span>traveler-friendly</span> and compliant with both US and EU (TSA) carry-on luggage regulations.</p>
+                        <p class="mb-4">The backpack has a special <span>detachable strap</span> included that allows you to easily and securely piggyback your JUST CHILL on a suitcase.</p>
+                        <p class="mb-4">15,3’’ / 39cm width;<br>
+                            18,9’’ / 48cm height;<br>
+                            7,5 ‘’ / 19cm depth;<br>
+                            2,9 lbs / 1.3 kg weight;<br>
+                            25 liters – volume without expansion;<br>
+                            30 liters – volume with expansion..</p>
+                    </div> 
                 </div>
-                <div class="title">
-                    <span class="title_word">ERGONOMIC </span>
-                    <span class="title_word">DESIGN</span>
-                </div> 
-                <div class="ergonomic-info">
-                    <p>JUST CHILL A incorporates a durable plastic frame that spreads the weight of the contents, thereby decreasing the pressure on your spine.</p>
-                    <p>This ergonomic frame has been created by leading orthopedists with your health and well-being in mind.</p>
+                <div class="ergonomic mb-8">
+                    <div class="rotate_icon">
+                        <div class="half_circle"></div>
+                        <div class="square"></div>
+                    </div>
+                    <div class="ergonomic-img">
+                        <img src="./images/a-huru-ergonomic-938x600.jpg" alt=""> 
+                    </div>
+                    <div class="title">
+                        <span class="title_word">ERGONOMIC </span>
+                        <span class="title_word">DESIGN</span>
+                    </div> 
+                    <div class="ergonomic-info">
+                        <p>JUST CHILL A incorporates a durable plastic frame that spreads the weight of the contents, thereby decreasing the pressure on your spine.</p>
+                        <p>This ergonomic frame has been created by leading orthopedists with your health and well-being in mind.</p>
+                    </div>
                 </div>
-            </div>
-            <h3 class="mb-4">DETAILS</h3>
-            <!-- Set up your HTML -->
-            <div class="owl-carousel owl-theme mb-5">
-                <div class="item">
-                    <img src="./images/carousel-1.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img src="./images/carousel-2.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img src="./images/carousel-3.jpg" alt="">
+                <h3 class="mb-4">DETAILS</h3>
+                <!-- Set up your HTML -->
+                <div class="owl-carousel owl-theme mb-5">
+                    <div class="item">
+                        <img src="./images/carousel-1.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="./images/carousel-2.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="./images/carousel-3.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </main>
@@ -228,10 +275,10 @@
                 </div>
                 <div class="footer_subscribe">
                     <h3 class="mb-4">subscribe</h3>
-                    <div class="input_group mb-2">
+                    <form class="input_group mb-2">
                         <input type="email" placeholder="Enter Your Email">
-                        <button>SUBSCRIBE NOW</button>
-                    </div>
+                        <button type="submit">SUBSCRIBE NOW</button>
+                    </form>
                     <small>Copyright ©2021 JUST CHILL All rights reserved.</small>
                     
                 </div>
@@ -245,6 +292,7 @@
     <script src="./vendor/owl/js/owl.carousel.min.js"></script>
     <script src="./js/carousel.js"></script>
     <script src="./js/nav.js"></script>
+    <script src="./js/sign.js"></script>
     <script src="./js/cart.js"></script>
 </body>
 </html>

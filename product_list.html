@@ -42,6 +42,51 @@
         </div>
     </div>
     <!-- MODAL -->
+        <!-- SIGNIN -->
+        <div class="form_container">
+            <div class="switcher">
+                <p class="fieldSet">
+                    <input type="radio" value="signIn" name="duration-1" id="signIn" checked>
+                    <label for="signIn">Sign In</label>
+                    <input type="radio" value="SignUp" name="duration-1" id="signUp">
+                    <label for="signUp">Sign Up</label>
+                    <span class="switch"></span>
+                </p>
+            </div>
+            <div class="form sign-up-container">
+                <form action="#" class="forming">
+                    <button class="form_close">&times;</button>
+                    <h2 class="form_title">Create Account</h2>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your email for registration</span>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button>SIGN UP</button>
+                </form>
+            </div>
+            <div class="form sign-in-container">
+                <form action="#" class="forming">
+                    <button class="form_close">&times;</button>
+                    <h2 class="form_title">Sign In</h2>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your account</span>
+                    <input type="email" placeholder="email">
+                    <input type="password" placeholder="password">
+                    <span>Forgot your password?</span>
+                    <button>SIGN IN</button>
+                </form>
+            </div>
+        </div>
+        <!-- SIGNIN -->
     <div class="container">
         <nav>
             <div class="logo">
@@ -49,7 +94,7 @@
             </div>
             <ul class="nav-links">
                 <li>
-                    <a href=""><img src="./images/user_icon.png" alt="">LOG IN</a>
+                    <a href="#" class="logIn"><img src="./images/user_icon.png" alt="">LOG IN</a>
                 </li>
                 <li>
                     <a class="nav-focus" href="product_list.html">SHOP</a>
@@ -77,205 +122,188 @@
             </div>
         </nav>
     <!-- 內容開始 -->
-        <div class="marquee mar">
-            <div id="no01" class="wrapper">
-                <div class="boxes mt mb-4">
-                    <div class="box">SHOP</div>
-                    <div class="box">SHOP</div>
-                    <div class="box">SHOP</div>
-                    <div class="box">SHOP</div>
-                    <div class="box">SHOP</div>
-                    <div class="box">SHOP</div>
-                    <div class="box">SHOP</div>
-                    <div class="box">SHOP</div>
-                    <div class="box">SHOP</div>
-                    <div class="box">SHOP</div>
+        <main>
+            <div class="marquee mar">
+                <div id="no01" class="wrapper">
+                    <div class="boxes mt mb-4">
+                        <div class="box">SHOP</div>
+                        <div class="box">SHOP</div>
+                        <div class="box">SHOP</div>
+                        <div class="box">SHOP</div>
+                        <div class="box">SHOP</div>
+                        <div class="box">SHOP</div>
+                        <div class="box">SHOP</div>
+                        <div class="box">SHOP</div>
+                        <div class="box">SHOP</div>
+                        <div class="box">SHOP</div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="product_list">
-            <h2 class="mb-2">View All</h2>
-            <ul class="selector mb-4">
-                <li class="select">
-                    <div class="select_title">
-                        <p>BRAND</p>
-                        <i class="fas fa-sort-down"></i>
-                    </div>
-                    <div class="choose">
-                        <div class="btn">Concept</div>
-                        <div class="btn">Vue</div>
-                        <div class="btn">React</div>
-                    </div>
-                </li>
-                <li class="select">
-                    <div class="select_title">
-                        <p>COLOR</p>
-                        <i class="fas fa-sort-down"></i>
-                    </div>
-                    <div class="choose">
-                        <div class="btn">Red</div>
-                        <div class="btn">Purple</div>
-                        <div class="btn">Black</div>
-                        <div class="btn">Canal</div>
-                    </div>
-                </li>
-                <li class="select">
-                    <div class="select_title">
-                        <p>PRICE</p>
-                        <i class="fas fa-sort-down"></i>
-                    </div>
-                    <div class="choose">
-                        <div class="btn">500~1000</div>
-                        <div class="btn">1001~1500</div>
-                        <div class="btn">1501~2000</div>
-                        <div class="btn">2000up</div>
-                    </div>
-                </li>
-            </ul>
-            <ul>
-                <li class="product_card" data-value=1>
-                    <div class="product_img mb-2">
-                        <a href="product.html"><img class="productImg" src="./images/product1.png" alt=""></a>
-                        <div class="hover_screen">QUICK VIEW</div>
-                    </div>
-                    <div class="product_NP">
-                        <h4 class="mb-1">M00 Military</h3>
-                        <p class="mb-1" data-price="1688">$1,688</p>
-                    </div>
-                    <p class="cart_btn">ADD TO CART</p>
-                </li>
-                <li class="product_card" data-value=1>
-                    <div class="product_img mb-2">
-                        <a href="product.html"><img class="productImg" src="./images/product2.png" alt=""></a>
-                        <div class="hover_screen">QUICK VIEW</div>
-                    </div>
-                    <div class="product_NP">
-                        <h4 class="mb-1">M01 Military</h3>
-                        <p class="mb-1"  data-price="1000">$1,000</p>
-                    </div>
-                    <p class="cart_btn">ADD TO CART</p>
-                </li>
-                <li class="product_card" data-value=1>
-                    <div class="product_img mb-2">
-                        <a href="product.html"><img class="productImg" src="./images/product2-purple.png" alt=""></a>
-                        <div class="hover_screen">QUICK VIEW</div>
-                    </div>
-                    <div class="product_NP">
-                        <h4 class="mb-1">M02 Military</h3>
-                        <p class="mb-1" data-price="1000">$1,000</p>
-                    </div>
-                    <p class="cart_btn">ADD TO CART</p>
-                </li>
-                <li class="product_card" data-value=1>
-                    <div class="product_img mb-2">
-                        <a href="product.html"><img class="productImg" src="./images/product3.png" alt=""></a>
-                        <div class="hover_screen">QUICK VIEW</div>
-                    </div>
-                    <div class="product_NP">
-                        <h4 class="mb-1">M03 Military</h3>
-                        <p class="mb-1" data-price="2688">$2,688</p>
-                    </div>
-                    <p class="cart_btn">ADD TO CART</p>
-                </li>
-                <li class="product_card" data-value=1>
-                    <div class="product_img mb-2">
-                        <a href="product.html"><img class="productImg" src="./images/product4.png" alt=""></a>
-                        <div class="hover_screen">QUICK VIEW</div>
-                    </div>
-                    <div class="product_NP">
-                        <h4 class="mb-1">M04 Military</h3>
-                        <p class="mb-1" data-price="2688">$2,688</p>
-                    </div>
-                    <p class="cart_btn">ADD TO CART</p>
-                </li>
-                <li class="product_card" data-value=1>
-                    <div class="product_img mb-2">
-                        <a href="product.html"><img class="productImg" src="./images/product5.png" alt=""></a>
-                        <div class="hover_screen">QUICK VIEW</div>
-                    </div>
-                    <div class="product_NP">
-                        <h4 class="mb-1">M05 Military</h3>
-                        <p class="mb-1" data-price="888">$888</p>
-                    </div>
-                    <p class="cart_btn">ADD TO CART</p>
-                </li>
-                <li class="product_card" data-value=1>
-                    <div class="product_img mb-2">
-                        <a href="product.html"><img class="productImg" src="./images/product5-blue.png" alt=""></a>
-                        <div class="hover_screen">QUICK VIEW</div>
-                    </div>
-                    <div class="product_NP">
-                        <h4 class="mb-1">M06 Military</h3>
-                        <p class="mb-1" data-price="1000">$1,000</p>
-                    </div>
-                    <p class="cart_btn">ADD TO CART</p>
-                </li>
-                <li class="product_card" data-value=1>
-                    <div class="product_img mb-2">
-                        <a href="product.html"><img class="productImg" src="./images/product6.png" alt=""></a>
-                        <div class="hover_screen">QUICK VIEW</div>
-                    </div>
-                    <div class="product_NP">
-                        <h4 class="mb-1">M07 Military</h3>
-                        <p class="mb-1" data-price="1688">$1,688</p>
-                    </div>
-                    <p class="cart_btn">ADD TO CART</p>
-                </li>
-                <li class="product_card" data-value=1>
-                    <div class="product_img mb-2">
-                        <a href="product.html"><img class="productImg" src="./images/product7-black.png" alt=""></a>
-                        <div class="hover_screen">QUICK VIEW</div>
-                    </div>
-                    <div class="product_NP">
-                        <h4 class="mb-1">M08 Military</h3>
-                        <p class="mb-1" data-price="1688">$1,688</p>
-                    </div>
-                    <p class="cart_btn">ADD TO CART</p>
-                </li>
-                <li class="product_card" data-value=1>
-                    <div class="product_img mb-2">
-                        <a href="product.html"><img class="productImg" src="./images/product8.png" alt=""></a>
-                        <div class="hover_screen">QUICK VIEW</div>
-                    </div>
-                    <div class="product_NP">
-                        <h4 class="mb-1">M09 Military</h3>
-                        <p class="mb-1" data-price="888">$888</p>
-                    </div>
-                    <p class="cart_btn">ADD TO CART</p>
-                </li>
-                <li class="product_card" data-value=1>
-                    <div class="product_img mb-2">
-                        <a href="product.html"><img class="productImg" src="./images/product9-red.png" alt=""></a>
-                        <div class="hover_screen">QUICK VIEW</div>
-                    </div>
-                    <div class="product_NP">
-                        <h4 class="mb-1">M10 Military</h3>
-                        <p class="mb-1" data-price="888">$888</p>
-                    </div>
-                    <p class="cart_btn">ADD TO CART</p>
-                </li>
-                <li class="product_card" data-value=1>
-                    <div class="product_img mb-2">
-                        <a href="product.html"><img class="productImg" src="./images/product4.png" alt=""></a>
-                        <div class="hover_screen">QUICK VIEW</div>
-                    </div>
-                    <div class="product_NP">
-                        <h4 class="mb-1">M11 Military</h3>
-                        <p class="mb-1" data-price="2688">$2,688</p>
-                    </div>
-                    <p class="cart_btn">ADD TO CART</p>
-                </li>
-            </ul>
-            <div class="pagination mb-4">
-                <ul>
-                    <li><a class="active" href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
+            <div class="product_list">
+                <h2 class="mb-2">View All</h2>
+                <ul class="selector mb-4">
+                    <li class="select">
+                        <div class="select_title">
+                            <p>BRAND</p>
+                            <i class="fas fa-sort-down"></i>
+                        </div>
+                        <div class="choose">
+                            <div class="btn">Concept</div>
+                            <div class="btn">Vue</div>
+                            <div class="btn">React</div>
+                        </div>
+                    </li>
+                    <li class="select">
+                        <div>
+                            <p class="btn">Reset All</p>
+                        </div>
+                    </li>
                 </ul>
+                <ul>
+                    <li class="product_card" data-value=1 data-brand="Concept" data-range="$1,000~$2,000">
+                        <div class="product_img mb-2">
+                            <a href="product.html"><img class="productImg" src="./images/product1.png" alt=""></a>
+                            <div class="hover_screen">QUICK VIEW</div>
+                        </div>
+                        <div class="product_NP">
+                            <h4 class="mb-1">M00 Military</h3>
+                            <p class="mb-1" data-price="1688">$1,688</p>
+                        </div>
+                        <p class="cart_btn">ADD TO CART</p>
+                    </li>
+                    <li class="product_card" data-value=1 data-brand="Concept" data-range="$1,000~$2,000">
+                        <div class="product_img mb-2">
+                            <a href="product.html"><img class="productImg" src="./images/product2.png" alt=""></a>
+                            <div class="hover_screen">QUICK VIEW</div>
+                        </div>
+                        <div class="product_NP">
+                            <h4 class="mb-1">M01 Military</h3>
+                            <p class="mb-1"  data-price="1000">$1,000</p>
+                        </div>
+                        <p class="cart_btn">ADD TO CART</p>
+                    </li>
+                    <li class="product_card" data-value=1 data-brand="Vue" data-range="$1,000~$2,000">
+                        <div class="product_img mb-2">
+                            <a href="product.html"><img class="productImg" src="./images/product2-purple.png" alt=""></a>
+                            <div class="hover_screen">QUICK VIEW</div>
+                        </div>
+                        <div class="product_NP">
+                            <h4 class="mb-1">M02 Military</h3>
+                            <p class="mb-1" data-price="1000">$1,000</p>
+                        </div>
+                        <p class="cart_btn">ADD TO CART</p>
+                    </li>
+                    <li class="product_card" data-value=1 data-brand="Vue">
+                        <div class="product_img mb-2">
+                            <a href="product.html"><img class="productImg" src="./images/product3.png" alt=""></a>
+                            <div class="hover_screen">QUICK VIEW</div>
+                        </div>
+                        <div class="product_NP">
+                            <h4 class="mb-1">M03 Military</h3>
+                            <p class="mb-1" data-price="2688">$2,688</p>
+                        </div>
+                        <p class="cart_btn">ADD TO CART</p>
+                    </li>
+                    <li class="product_card" data-value=1 data-brand="React">
+                        <div class="product_img mb-2">
+                            <a href="product.html"><img class="productImg" src="./images/product4.png" alt=""></a>
+                            <div class="hover_screen">QUICK VIEW</div>
+                        </div>
+                        <div class="product_NP">
+                            <h4 class="mb-1">M04 Military</h3>
+                            <p class="mb-1" data-price="2688">$2,688</p>
+                        </div>
+                        <p class="cart_btn">ADD TO CART</p>
+                    </li>
+                    <li class="product_card" data-value=1 data-brand="React"  data-range="Under$1,000">
+                        <div class="product_img mb-2">
+                            <a href="product.html"><img class="productImg" src="./images/product5.png" alt=""></a>
+                            <div class="hover_screen">QUICK VIEW</div>
+                        </div>
+                        <div class="product_NP">
+                            <h4 class="mb-1">M05 Military</h3>
+                            <p class="mb-1" data-price="888">$888</p>
+                        </div>
+                        <p class="cart_btn">ADD TO CART</p>
+                    </li>
+                    <li class="product_card" data-value=1 data-brand="React" data-range="$1,000~$2,000">
+                        <div class="product_img mb-2">
+                            <a href="product.html"><img class="productImg" src="./images/product5-blue.png" alt=""></a>
+                            <div class="hover_screen">QUICK VIEW</div>
+                        </div>
+                        <div class="product_NP">
+                            <h4 class="mb-1">M06 Military</h3>
+                            <p class="mb-1" data-price="1000">$1,000</p>
+                        </div>
+                        <p class="cart_btn">ADD TO CART</p>
+                    </li>
+                    <li class="product_card" data-value=1 data-brand="React" data-range="$1,000~$2,000">
+                        <div class="product_img mb-2">
+                            <a href="product.html"><img class="productImg" src="./images/product6.png" alt=""></a>
+                            <div class="hover_screen">QUICK VIEW</div>
+                        </div>
+                        <div class="product_NP">
+                            <h4 class="mb-1">M07 Military</h3>
+                            <p class="mb-1" data-price="1688">$1,688</p>
+                        </div>
+                        <p class="cart_btn">ADD TO CART</p>
+                    </li>
+                    <li class="product_card" data-value=1 data-brand="Vue" data-range="$1,000~$2,000">
+                        <div class="product_img mb-2">
+                            <a href="product.html"><img class="productImg" src="./images/product7-black.png" alt=""></a>
+                            <div class="hover_screen">QUICK VIEW</div>
+                        </div>
+                        <div class="product_NP">
+                            <h4 class="mb-1">M08 Military</h3>
+                            <p class="mb-1" data-price="1688">$1,688</p>
+                        </div>
+                        <p class="cart_btn">ADD TO CART</p>
+                    </li>
+                    <li class="product_card" data-value=1 data-brand="Vue">
+                        <div class="product_img mb-2">
+                            <a href="product.html"><img class="productImg" src="./images/product8.png" alt=""></a>
+                            <div class="hover_screen">QUICK VIEW</div>
+                        </div>
+                        <div class="product_NP">
+                            <h4 class="mb-1">M09 Military</h3>
+                            <p class="mb-1" data-price="888">$888</p>
+                        </div>
+                        <p class="cart_btn">ADD TO CART</p>
+                    </li>
+                    <li class="product_card" data-value=1 data-brand="Concept">
+                        <div class="product_img mb-2">
+                            <a href="product.html"><img class="productImg" src="./images/product9-red.png" alt=""></a>
+                            <div class="hover_screen">QUICK VIEW</div>
+                        </div>
+                        <div class="product_NP">
+                            <h4 class="mb-1">M10 Military</h3>
+                            <p class="mb-1" data-price="888">$888</p>
+                        </div>
+                        <p class="cart_btn">ADD TO CART</p>
+                    </li>
+                    <li class="product_card" data-value=1 data-brand="Concept">
+                        <div class="product_img mb-2">
+                            <a href="product.html"><img class="productImg" src="./images/product4.png" alt=""></a>
+                            <div class="hover_screen">QUICK VIEW</div>
+                        </div>
+                        <div class="product_NP">
+                            <h4 class="mb-1">M11 Military</h3>
+                            <p class="mb-1" data-price="2688">$2,688</p>
+                        </div>
+                        <p class="cart_btn">ADD TO CART</p>
+                    </li>
+                </ul>
+                <div class="pagination mb-4">
+                    <ul>
+                        <li><a class="active" href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </main>
     <!-- 內容結束 -->
         <footer class="mb-6">
             <div class="marquee">
@@ -320,10 +348,10 @@
                 </div>
                 <div class="footer_subscribe">
                     <h3 class="mb-1">subscribe</h3>
-                    <div class="input_group mb-2">
+                    <form class="input_group mb-2">
                         <input type="email" placeholder="Enter Your Email">
-                        <button>SUBSCRIBE NOW</button>
-                    </div>
+                        <button type="submit">SUBSCRIBE NOW</button>
+                    </form>
                     <small>Copyright ©2021 JUST CHILL All rights reserved.</small>
                     
                 </div>
@@ -334,6 +362,7 @@
     <script src="./js/marquee.js"></script>
     <script src="./js/shop.js"></script>
     <script src="./js/nav.js"></script>
+    <script src="./js/sign.js"></script>
     <script src="./js/cart.js"></script>
 </body>
 </html>

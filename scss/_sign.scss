@@ -1,0 +1,126 @@
+button:focus{
+    outline: none;
+}
+button{
+    cursor:pointer;
+}
+.form_container{
+    padding-top: 60px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    z-index:2000 ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    .switcher{
+        margin-bottom: 30px;
+        text-align: center;
+        .fieldSet{
+            display: inline-block;
+            position: relative;
+            padding: 2px;
+            border-radius: 50em;
+            border: 2px solid $special;
+            input[type="radio"]{
+                position: absolute;
+                opacity: 0;
+                &:checked + label + .switch, &:checked + label:nth-of-type(n) + .switch{
+                    transform: translateX(90px);
+                }
+            }
+            label{
+                position: relative;
+                z-index:1 ;
+                display: inline-block;
+                width: 90px;
+                height: 40px;
+                line-height: 40px;
+                cursor: pointer;
+                color: $primary;
+                font-weight: 700;
+            }
+            .switch{
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                width: 90px;
+                height: 40px;
+                background-color: $secondary;
+                border-radius: 50em;
+                transition: all .5s;
+            }
+        }
+    }
+    .sign-up-container{
+        display: none;
+    }
+    .form_title{
+        font-weight: 900;
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+    .social-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        .social{
+            border: 1px solid $special;
+            background-color: $special;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            border-radius: 50%;
+            color: $secondary;
+            margin: 0px 10px;
+        }
+    }
+    form{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 30px 50px 0px 50px;
+        height: 100%;
+        text-align: center;
+        background-color: $secondary;
+        border-radius: 10px;
+        position: relative;
+        .form_close{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 30px;
+            height: 30px;
+            padding: 0;
+            background-color: transparent;
+            color: $primary;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        input{
+            background-color: #eee;
+            border: none;
+            padding: 12px 15px;
+            margin: 8px 0;
+            width: 100%;
+        }
+        button{
+            background-color: $special;
+            border: none ;
+            padding: 5px 20px;
+            border-radius: 20px;
+            color: $secondary;
+        }
+        input[type="password"]{
+            margin-bottom: 30px;
+        }
+        span{
+            margin-bottom: 20px;
+        }
+    }
+}
