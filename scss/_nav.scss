@@ -112,6 +112,12 @@ nav{
             transition: transform .5s ease-in;
             li{
                 opacity: 0;
+                // border: 1px solid #000;
+                text-align: center;
+                a{
+                    padding: 50px 0 10px 0;
+                    display: block;
+                }
             }
             li:first-child{
                 order: -1;

@@ -285,6 +285,11 @@ nav .nav-links .nav-focus {
   }
   nav .nav-links li {
     opacity: 0;
+    text-align: center;
+  }
+  nav .nav-links li a {
+    padding: 50px 0 10px 0;
+    display: block;
   }
   nav .nav-links li:first-child {
     -webkit-box-ordinal-group: 0;
