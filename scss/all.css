@@ -3068,6 +3068,12 @@ button {
   margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+  .form_container {
+    padding-top: 30px;
+  }
+}
+
 .page-wrap {
   max-width: 1000px;
   margin: 60px auto;
