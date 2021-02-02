@@ -80,6 +80,8 @@ button{
         }
     }
     form{
+        margin: 0 20px;
+        max-width: 300px;
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -115,6 +117,7 @@ button{
             padding: 5px 20px;
             border-radius: 20px;
             color: $secondary;
+            margin-bottom: 20px;
         }
         input[type="password"]{
             margin-bottom: 30px;

@@ -1,0 +1,74 @@
+.page-wrap {
+    max-width:1000px;
+    margin: 60px auto;
+    padding: 20px;
+  }
+  .article-header {
+    text-align: center;
+    @media (max-width: 520px) {
+      h2 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .intro-ps {
+    columns: 2;
+    margin: 0 0 2rem 0;
+    > p:first-child {
+      text-indent: 0;
+      strong {
+        font-size: 125%;
+        letter-spacing: -1px;
+        line-height: 0;
+      }
+    }
+    @media (max-width: 520px) {
+      columns: 1; 
+    }
+  }
+  
+  .in-brief {
+    text-align: center;
+    margin: 0 0 2rem 0;
+    h3 {
+      text-transform: uppercase;
+      text-align: center;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      display: inline-block;
+      padding: 0 20px;
+      color: $special;
+      letter-spacing: 0.2rem;
+      font-size: 80%;
+      margin: 0;
+      background: white;
+      position: relative;
+      top: 1px;
+    }
+  }
+  .in-brief-content {
+    columns: 3;
+    font-size: 0.8rem;
+    text-align: left;
+    border: 1px solid #ccc;
+    padding: 20px;
+    @media (max-width: 520px) {
+      columns: 2; 
+    }
+  }
+  .article-header {
+    padding: 0 50px;
+    margin: 0 0 30px 0;
+  }
+  .byline {
+    font-style: italic;
+  }
+  .article-body {
+    font-size: 0.9rem;
+    margin: 0 auto;
+    h3 {
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 2rem;
+    }
+  }

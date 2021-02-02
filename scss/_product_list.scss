@@ -71,11 +71,6 @@
             position: relative;
             padding: 5px 15px;
             cursor: pointer;
-            &:hover{
-                .choose{
-                    display: flex;
-                }
-            }
             i{
                 position: absolute;
                 top: 50%;
@@ -110,6 +105,9 @@
                     background-color: $special;
                 }
             }
+            .block{
+                display:flex;
+            }            
         }
     }
 }

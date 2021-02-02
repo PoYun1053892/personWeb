@@ -16,6 +16,8 @@ function cancelModal(){
 quickView.forEach(btn => btn.addEventListener("click", showModal)) ;
 cancel_btn.addEventListener("click" , cancelModal) ;
 
+
+//////
 const btn = document.querySelectorAll(".btn");
 btn.forEach(Btn => {
     Btn.addEventListener("click",function(){
@@ -31,6 +33,13 @@ btn.forEach(Btn => {
             }
         })
     })
+})
+
+////////
+const select = document.querySelectorAll(".select")[0];
+const choose = document.querySelector(".choose");
+select.addEventListener("click",function(){
+    choose.classList.toggle("block");
 })
 
 

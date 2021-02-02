@@ -41,13 +41,14 @@
                 align-items: start;
             }
             a{
-                background-color: $secondary;
-                color: $primary;
+                background-color: $special;
+                color: $secondary;
                 padding: 5px 20px;
                 border-radius: 5px;
+                transition: all .3s;
                 &:hover{
-                    background-color: $special;
-                    color: $secondary ;
+                    background-color: $secondary;
+                    color: $primary ;
                 }
             }
         }
@@ -115,7 +116,7 @@
                 font-size: 0.8rem;
             }
             a{
-                font-size: 0.8rem;
+                font-size: 1.25rem;
             }
         }
         .navigation{
