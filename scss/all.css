@@ -288,8 +288,7 @@ nav .nav-links .nav-focus {
     text-align: center;
   }
   nav .nav-links li a {
-    padding: 50px 0 10px 0;
-    display: block;
+    padding-top: 30px;
   }
   nav .nav-links li:first-child {
     -webkit-box-ordinal-group: 0;
